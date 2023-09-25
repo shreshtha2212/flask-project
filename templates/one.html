@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>first page</title>
+
+    </head>
+    <body>
+        <h1>Heading 1</h1>
+        {% if a %}
+        {% if a>=18 %}
+        <h2>{{n}} can vote</h2>
+        {% else %}
+        <h2>{{n}} cannot vote</h2>
+        {% endif %}
+        {% endif %}
+        {% if data %}
+        {% for key,value in data.items() %}
+        <h2>{{key}} --> {{value}} </h2>
+        {% endfor %}
+        {% endif %}
+    </body>
+</html>

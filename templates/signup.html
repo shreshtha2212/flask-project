@@ -1,0 +1,37 @@
+<html>
+    <head>
+
+        <style>
+            div{
+                margin-top:150px;
+            }
+            input{
+                height:5%;
+                width:25%;
+                border-radius: 5px;
+                border: 2px solid;
+            }
+            button{
+                height:5%;
+                width:15%;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        {% include 'index.html' %}
+        {% block head%}
+        {% endblock %}
+        <center>
+        <div>
+            <form method="POST" action="/aftersignup/">
+                <input type="text" name="name" placeholder="NAME"><br><br>
+                <input type="email" name="email" placeholder="EMAIL"><br><br>
+                <input type="password" name="passwd" placeholder="PASSWORD"><br><br>
+                <button type="submit"> SIGN UP</button> 
+    
+            </form>
+        </div>
+    </center>
+    </body>
+</html>
